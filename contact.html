@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact opnemen met S.T.A.R.S.II</title>
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="Icon" href="Afbeeldingen/logo.ico"> </head>
+
+<body>
+    <header> <img src="Afbeeldingen/logo.png" alt="dit is het logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="producten.html">Producten</a></li>
+                <li><a href="activiteiten.html">Activiteiten</a></li>
+                <li><a href="over_ons.html">Over ons</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <section id="contact2">
+                <h1>Contact</h1>
+                <p>E-mail: starsii@telenet.be</p>
+                <p>Tel.: 02 759 52 58</p>
+                <p>Gsm: +324 78 33 35 53</p>
+                <p>BTW: BE 0467.807.046</p>
+            </section>
+            <section id="locatie">
+                <h1>Locatie</h1>
+                <p>S.T.A.R.S.II BVBA</p>
+                <p>Leuvensesteenweg 187</p>
+                <p>3070 Kortenberg</p>
+                <p>België</p>
+            </section>
+            <section id="openingsuren">
+                <h1>Openingsuren:</h1>
+                <p>Maandag: Op afspraak</p>
+                <p>Dinsdag tot vrijdag: 14u00 - 18u30</p>
+                <p>Zaterdag: 10u30 - 17u30</p>
+                <p>Zondag: Gesloten</p>
+            </section>
+        </section>
+        <section>
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var uluru = {
+                        lat: 50.8848692
+                        , lng: 4.5315016
+                    };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 16
+                        , center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru
+                        , map: map
+                    });
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtr2K6OjxEW_GmdX5ucUJ_nDoBKsXbTtE&callback=initMap">
+            </script>
+        </section>
+        <fieldset>
+            <form action="Server">
+                <h1>Contacteer Ons</h1>
+                <label for="voornaam"></label>
+                <br>
+                <input type="text" id="voornaam" class="forminput" placeholder="Voornaam">
+                <br>
+                <label for="achternaam"></label>
+                <br>
+                <input type="text" id="achternaam" class="forminput" placeholder="Achternaam">
+                <br>
+                <label for="adres"></label>
+                <br>
+                <input type="text" id="adres" class="forminput" placeholder="Adres">
+                <br>
+                <label for="postcode"></label>
+                <br>
+                <input type="number" id="postcode" class="forminput" placeholder="Postcode">
+                <br>
+                <label for="telefoon"> </label>
+                <br>
+                <input type="number" id="telefoon" class="forminput" placeholder="Telefoon nummer">
+                <br>
+                <label for="email"> </label>
+                <br>
+                <input type="text" id="email" class="forminput" placeholder="E-mail">
+                <br>
+                <br>
+                <textarea name="vragenenopmerkingen" id="opmerkingen" placeholder="Vragen/Opmerkingen"></textarea>
+                <br>
+                <p>
+                    <input type="submit" value="Verstuur"> </p>
+            </form>
+        </fieldset>
+    </main>
+    <footer>
+        <section class="footersection">
+            <section class="footereen">
+                <p class="titeleen">Contacteer Ons</p>
+                <p>starsii@telenet.be</p>
+                <p>Tel.: 02 759 52 58</p>
+                <p>Gsm: +324 78 33 35 53</p>
+                <p>BTW: BE 0467.807.046</p>
+            </section>
+            <section class="footertwee">
+                <p class="titeltwee">Vind ons</p>
+                <p>S.T.A.R.S.II BVBA</p>
+                <p>Leuvensesteenweg 187</p>
+                <p>3070 Kortenberg</p>
+                <p>België</p>
+            </section>
+            <section class="footerdrie">
+                <p class="titeldrie">Openingsuren</p>
+                <p>Maandag: Op afspraak</p>
+                <p>Dinsdag - vrijdag: 14u:00 - 18u30</p>
+                <p>Zaterdag: 10u30 - 17u30</p>
+                <p>Zondag: Gesloten</p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>
